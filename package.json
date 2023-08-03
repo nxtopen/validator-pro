@@ -1,0 +1,11 @@
+{
+  "name": "validator-pro",
+  "version": "0.0.1-beta",
+  "description": "An all in One Validator Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
