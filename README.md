@@ -1,2 +1,3 @@
-# validator-pro
-Not a simple validator, pro validations with ease! Don't worry, Its Free!
+# Validator PRO
+
+Not just an another validator plugin, we've everything packed for you!
