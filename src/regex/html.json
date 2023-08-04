@@ -1,0 +1,22 @@
+{
+  "HTML_TAGS": "<(\"[^\"]*\"|'[^']*'|[^'\">])*>",
+  "HTML_HEX_COLOR": "^#([A-Fa-f0-9]{3,4}|[A-Fa-f0-9]{6}|[A-Fa-f0-9]{8})$",
+  "HTML_COMMENT": "<!--(?:.|\\n)*?-->",
+  "HTML_ENTITY": "&[a-zA-Z][a-zA-Z0-9]*;",
+  "HTML_SCRIPT": "^<script[^>]*>.*<\\/script>$",
+  "HTML_STYLE": "^<style[^>]*>.*<\\/style>$",
+  "HTML_FORM": "^<form[^>]*>.*<\\/form>$",
+  "HTML_LINK": "^<a[^>]*>.*<\\/a>$",
+  "HTML_IMAGE": "^<img[^>]*>$",
+  "HTML_INPUT": "^<input[^>]*>$",
+  "HTML_SELECT": "^<select[^>]*>.*<\\/select>$",
+  "HTML_TEXTAREA": "^<textarea[^>]*>.*<\\/textarea>$",
+  "HTML_HEADING": "^<h[1-6]>.*<\\/h[1-6]>$",
+  "HTML_PARAGRAPH": "^<p>.*<\\/p>$",
+  "HTML_LIST": "^<(ul|ol)>.*<\\/(ul|ol)>$",
+  "HTML_TABLE": "^<table>.*<\\/table>$",
+  "HTML_LINK_HREF": "^<a[^>]+href=[\"'][^\"']+[\"'][^>]*>[^<]*<\\/a>$",
+  "HTML_IMAGE_SRC": "^<img[^>]+src=[\"'][^\"']+[\"'][^>]*>$",
+  "HTML_SCRIPT_SRC": "^<script[^>]+src=[\"'][^\"']+[\"'][^>]*><\\/script>$",
+  "HTML_STYLE_HREF": "^<link[^>]+href=[\"'][^\"']+[\"'][^>]*>$"
+}

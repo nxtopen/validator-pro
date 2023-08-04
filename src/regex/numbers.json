@@ -1,0 +1,9 @@
+{
+  "BASIC_NUMBER": "^\\d+$",
+  "INTEGER": "^-?\\d+$",
+  "DECIMAL_NUMBER": "^-?\\d*\\.\\d+$",
+  "POSITIVE_INTEGER": "^\\d+$",
+  "NEGATIVE_INTEGER": "^-\\d+$",
+  "POSITIVE_DECIMAL": "^\\d*\\.\\d+$",
+  "NEGATIVE_DECIMAL": "^-\\d*\\.\\d+$"
+}
