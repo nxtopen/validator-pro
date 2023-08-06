@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 class ValidatorPro {
     constructor() {
@@ -7,15 +8,28 @@ class ValidatorPro {
     }
 
     loadRegexFromJson() {
-        const filePath = __dirname + '/regex.json';
-        const jsonData = fs.readFileSync(filePath, 'utf-8');
-        this.regexMap = JSON.parse(jsonData);
+        const regexFolderPath = path.join(__dirname, 'regex');
+        const regexFiles = fs.readdirSync(regexFolderPath);
+
+        const mergedRegexMap = {};
+
+        regexFiles.forEach((file) => {
+            if (path.extname(file).toLowerCase() === '.json') {
+                const filePath = path.join(regexFolderPath, file);
+                const jsonData = fs.readFileSync(filePath, 'utf-8');
+                const regexData = JSON.parse(jsonData);
+
+                Object.assign(mergedRegexMap, regexData);
+            }
+        });
+
+        this.regexMap = mergedRegexMap;
     }
 
     validate(type, inputString) {
         const regexPattern = this.regexMap[type];
         if (!regexPattern) {
-            throw new Error(`Invalid type '${type}'.`);
+            throw new Error(`Invalid type '${type}'. Available types: ${Object.keys(this.regexMap).join(', ')}.`);
         }
 
         const regex = new RegExp(regexPattern);
@@ -25,7 +39,7 @@ class ValidatorPro {
     escape(type, inputString) {
         const regexPattern = this.regexMap[type];
         if (!regexPattern) {
-            throw new Error(`Invalid type '${type}'.`);
+            throw new Error(`Invalid type '${type}'. Available types: ${Object.keys(this.regexMap).join(', ')}.`);
         }
 
         const regex = new RegExp(`[^${regexPattern}]`, 'g');
