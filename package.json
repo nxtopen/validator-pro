@@ -1,6 +1,6 @@
 {
   "name": "validator-pro",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "An all in One Validator Plugin",
   "main": "index.js",
   "scripts": {
