@@ -2,6 +2,8 @@
 
 Not just an another validator plugin, we've everything packed for you!
 
+[Join <b>NxtOpen</b> On Discord](https://discord.gg/NHug3AMz4x)
+
 ## Features
 
 ✅ Wide-range of Regular Expressions <br>
