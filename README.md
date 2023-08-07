@@ -50,4 +50,4 @@ Escape the specified option matched, from input
 .escape(OPTION,INPUT)
 
 
-[See All Options](/docs/OPTIONS.MD)
+[See All Options](https://github.com/nxtopen/validator-pro/blob/main/docs/OPTIONS.MD)
