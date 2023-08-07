@@ -1,10 +1,10 @@
 {
   "name": "validator-pro",
-  "version": "0.0.6-1",
+  "version": "0.0.6-2",
   "description": "An all in One Validator Plugin",
-  "main": "dist/validator-pro.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && copyfiles -u 1 src/regex/**/* dist/"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
   ],
   "devDependencies": {
     "@types/node": "^20.4.8",
+    "copyfiles": "^2.4.1",
     "typescript": "^5.1.6"
   }
 }
