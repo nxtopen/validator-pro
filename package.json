@@ -1,12 +1,21 @@
 {
   "name": "validator-pro",
-  "version": "0.0.6",
+  "version": "0.0.6-1",
   "description": "An all in One Validator Plugin",
-  "main": "index.js",
+  "main": "dist/validator-pro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
-  "keywords": ["validator","pro-validation","validator-pro","validation"]
+  "keywords": [
+    "validator",
+    "pro-validation",
+    "validator-pro",
+    "validation"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "typescript": "^5.1.6"
+  }
 }

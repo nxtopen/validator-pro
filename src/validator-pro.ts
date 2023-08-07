@@ -1,7 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import * as fs from 'fs';
+import * as path from 'path';
 
 class ValidatorPro {
+    regexMap: {};
     constructor() {
         this.regexMap = {};
         this.loadRegexFromJson();
@@ -42,9 +43,9 @@ class ValidatorPro {
             throw new Error(`Invalid type '${type}'. Available types: ${Object.keys(this.regexMap).join(', ')}.`);
         }
 
-        const regex = new RegExp(`[^${regexPattern}]`, 'g');
+        const regex = new RegExp(`${regexPattern}`, 'g');
         return inputString.replace(regex, '');
     }
 }
 
-module.exports = ValidatorPro;
+export default ValidatorPro;
