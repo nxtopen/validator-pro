@@ -51,5 +51,14 @@ Escape the specified option matched, from input
 
 .escape(OPTION,INPUT)
 
+## Options Available
 
-[See All Options](https://github.com/nxtopen/validator-pro/blob/main/docs/OPTIONS.MD)
+ * [Common](https://github.com/nxtopen/validator-pro/blob/main/src/regex/common.json)
+ * [HTML Tags](https://github.com/nxtopen/validator-pro/blob/main/src/regex/html.json)
+ * [Numbers](https://github.com/nxtopen/validator-pro/blob/main/src/regex/numbers.json)
+ * [Time](https://github.com/nxtopen/validator-pro/blob/main/src/regex/time.json)
+ * [Misc](https://github.com/nxtopen/validator-pro/blob/main/src/regex/misc.json)
+
+## Contribute More
+
+Easily contribute to our collection, by Opening an issue with RegEx to be added or update with file or data froma forked repo with a PR.
