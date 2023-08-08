@@ -1,13 +1,15 @@
 {
   "name": "validator-pro",
-  "version": "0.0.7-2",
+  "version": "0.0.8",
   "description": "An all in One Validator Plugin",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && copyfiles -u 1 src/regex/**/* dist/"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/nxtopen/validator-pro",
+  "repository": "https://github.com/nxtopen/validator-pro",
   "keywords": [
     "validator",
     "pro-validation",
